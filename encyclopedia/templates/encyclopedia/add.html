@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1> 
+    <input type ="text" name="entryname">Enter Entry Name
+	</h1>
+    <form>
+    	<input type="text" Name="Entry">
+    	<input type="submit" name="Add entry">
+    </form>
+    <a href="{%url 'index' %}">home</a>
+{% endblock %}
